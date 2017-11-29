@@ -1,8 +1,8 @@
 CREATE TABLE Claims (
   "id" INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-  "mem_id" varchar(20) NOT NULL,
+  "member_id" varchar(20) NOT NULL,
   "date" date NOT NULL,
-  "description" long varchar NOT NULL,
+  "discription" long varchar NOT NULL,
   "status" varchar(10) NOT NULL,
   "amount" float NOT NULL
 );
@@ -24,7 +24,7 @@ TRUNCATE TABLE Members;
 
 CREATE TABLE payments (
   "id" INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-  "mem_id" varchar(20) NOT NULL,
+  "member_id" varchar(20) NOT NULL,
   "type_of_payment" char(10) NOT NULL,
   "amount" float NOT NULL,
   "date" date NOT NULL,
